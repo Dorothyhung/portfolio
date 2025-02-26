@@ -25,7 +25,7 @@ const Logo = () => {
             <LogoBox>
                 <Image src={footPrintImg} width={30} height={30} alt="logo"/>
                 <Text
-                    color={useColorModeValue('gray.800', 'whiteAlpha.900')}
+                    color={useColorModeValue('rose.800', 'rose.200')}
                     fontFamily='Source Code Pro'
                     fontWeight="bold"
                     ml={3}>
