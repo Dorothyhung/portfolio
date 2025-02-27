@@ -4,11 +4,14 @@ import {
   Heading,
   Image,
   Link,
+  Button,
   useColorModeValue,
 } from '@chakra-ui/react'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import NextLink from 'next/link'
+import { ChevronRightIcon } from '@chakra-ui/icons'
+import { BioSection, BioYear } from '../components/bio'
 
 const Page = () => {
   return (
@@ -50,11 +53,70 @@ const Page = () => {
         </Box>
       </Box>
 
-      <Section dlay={0.1}>
+      <Section delay={0.1}>
         <Heading as="h3" variant="section-title">Projects</Heading>
+        
         <Paragraph>Dorothy is a dedicated software engineer at Microsoft with a passion for building projects. One of these projects is called {' '} 
-            <NextLink href="https://spotifyaudioanalysis.com/" target="_blank"><Link>SpotifyAnalysis</Link></NextLink>
+            <Link href="https://spotifyaudioanalysis.com/" >SpotifyAnalysis</Link>
         </Paragraph>
+
+        <Box align="center" my={4}>
+          <NextLink href="/projects">
+          
+          <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+            My Portfolio
+          </Button>
+          </NextLink>
+        </Box>
+      </Section>
+
+      <Section delay={0.2}>
+        <Heading as="h3" variant="section-title">Bio</Heading>
+          
+        <BioSection>
+          <BioYear>2002</BioYear>
+          Born in WA, USA.
+        </BioSection>
+
+        <BioSection>
+          <BioYear>2023</BioYear>
+          Data services internship at Costco
+        </BioSection>
+
+        <BioSection>
+          <BioYear>2023</BioYear>
+          Software engineer internship at KBR
+        </BioSection>
+
+        <BioSection>
+          <BioYear>2023</BioYear>
+          Infrastructure engineer internship at Nelnet
+        </BioSection>
+
+        <BioSection>
+          <BioYear>2024</BioYear>
+          Software engineer internship at Microsoft
+        </BioSection>
+
+        <BioSection>
+          <BioYear>2024</BioYear>
+          Completed bachelors degree in software development at Bellevue College
+        </BioSection>
+
+        <BioSection>
+          <BioYear>2025 to present</BioYear>
+          Software engineer at Microsoft
+        </BioSection>
+
+        <Box align="center" my={4}>
+          <a href="https://www.linkedin.com/in/dorothyhung1/" target="_blank">
+          
+          <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+            My LinkedIn
+          </Button>
+          </a>
+        </Box>
+
       </Section>
     </Container>
   )

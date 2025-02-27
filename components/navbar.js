@@ -72,9 +72,6 @@ const Navbar = props => {
           <LinkItem href="/projects" path={path}>
             Projects
           </LinkItem>
-          <LinkItem href="/works" path={path}>
-            Works
-          </LinkItem>
           <LinkItem
             href="https://github.com/Dorothyhung/portfolio"
             target="_blank"
@@ -87,7 +84,7 @@ const Navbar = props => {
             target="_blank"
             path={path}
           >
-            Source
+            LinkedIn
           </LinkItem>
         </Stack>
 
