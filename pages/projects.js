@@ -5,6 +5,7 @@ import { WorkGridItem } from '../components/grid-item'
 
 import thumbSpotifyAnalysis from '../public/images/projects/spotify_thumbnail.png'
 import thumbImpervious from '../public/images/projects/impervious_thumbnail.png'
+import thumbSoundSafe from '../public/images/projects/soundsafe_thumbnail.png'
 
 const Projects = () => {
   return (
@@ -60,7 +61,7 @@ const Projects = () => {
           <WorkGridItem
             id="soundsafe"
             title="SoundSafe"
-            thumbnail={thumbImpervious}
+            thumbnail={thumbSoundSafe}
             link="https://github.com/Dorothyhung/SoundSafeV1"
             newtab={true}
           >
