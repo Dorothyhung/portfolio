@@ -7,12 +7,12 @@ const StyledDiv = chakra(motion.div, {
   }
 })
 
-const Section = ({ children, delay = 0 }) => (
+const Section = ({ children, delay = 0, mt }) => (
   <StyledDiv bg={useColorModeValue('#f0f9f8', '#2020230')}
     initial={{ y: 10, opacity: 0 }}
     animate={{ y: 0, opacity: 1 }}
     transition={{ duration: 0.8, delay }}
-    my={6}
+    mt={mt}
     px={6}
     py={2}
     borderRadius="xl"

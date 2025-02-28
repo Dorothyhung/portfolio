@@ -39,7 +39,7 @@ const Page = () => {
           align="center"
         >
           <Image
-            borderColor="rose.800"
+            borderColor={useColorModeValue('white', '')}
             borderWidth={2}
             borderStyle="solid"
             maxWidth="200px"
@@ -52,7 +52,7 @@ const Page = () => {
         </Box>
       </Box>
 
-      <Section delay={0.1 } bg={useColorModeValue('#f0f9f8', '#2020230')}>
+      <Section delay={0.1 } bg={useColorModeValue('#f0f9f8', '#2020230')} mt={6}>
         <Heading as="h3" variant="section-title">About Me</Heading>
         
         <Paragraph>Dorothy is a dedicated software engineer with a passion for building projects and making real world impact. 
@@ -68,7 +68,7 @@ const Page = () => {
         </Box>
       </Section>
 
-      <Section delay={0.2}>
+      <Section delay={0.2} mt={6}>
         <Heading as="h3" variant="section-title">Experience</Heading>
 
         <BioSection>
@@ -130,7 +130,7 @@ const Page = () => {
 
       </Section>
 
-      <Section delay={0.1}>
+      <Section delay={0.1} mt={6}>
         <Heading as="h3" variant="section-title">Education</Heading>
         
         <BioSection>
