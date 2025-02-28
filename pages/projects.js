@@ -29,7 +29,7 @@ const Projects = () => {
           <Box align="center" my={4}>
             <a href="https://github.com/Dorothyhung/P320-Spotify-API-Project" target="_blank">
             
-            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+            <Button rightIcon={<ChevronRightIcon />} colorScheme="pink">
                 Source
             </Button>
             </a>
@@ -50,7 +50,7 @@ const Projects = () => {
           <Box align="center" my={4}>
             <a href="https://github.com/Dorothyhung/impervious_flask_app" target="_blank">
             
-            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+            <Button rightIcon={<ChevronRightIcon />} colorScheme="pink">
                 Source
             </Button>
             </a>
@@ -71,7 +71,7 @@ const Projects = () => {
           <Box align="center" my={4}>
             <a href="https://github.com/Dorothyhung/SoundSafeV1" target="_blank">
             
-            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+            <Button rightIcon={<ChevronRightIcon />} colorScheme="pink">
                 Source
             </Button>
             </a>

@@ -11,7 +11,7 @@ import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import NextLink from 'next/link'
 import { ChevronRightIcon } from '@chakra-ui/icons'
-import { BioSection, BioYear } from '../components/bio'
+import { BioSection, Year, Company, BioHeader } from '../components/bio'
 
 const Page = () => {
   return (
@@ -31,7 +31,7 @@ const Page = () => {
           <Heading as="h2" variant="page-title">
             Dorothy Hung
           </Heading>
-          <p>Software Engineer</p>
+          <p>Software Engineer at Microsoft</p>
         </Box>
 
         <Box
@@ -56,14 +56,13 @@ const Page = () => {
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">Projects</Heading>
         
-        <Paragraph>Dorothy is a dedicated software engineer at Microsoft with a passion for building projects. One of these projects is called {' '} 
-            <Link href="https://spotifyaudioanalysis.com/" >SpotifyAnalysis</Link>
+        <Paragraph>Dorothy is a dedicated software engineer with a passion for building projects and making real world impact. 
         </Paragraph>
 
         <Box align="center" my={4}>
           <NextLink href="/projects">
           
-          <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+          <Button rightIcon={<ChevronRightIcon />} colorScheme="pink">
             My Portfolio
           </Button>
           </NextLink>
@@ -71,52 +70,85 @@ const Page = () => {
       </Section>
 
       <Section delay={0.2}>
-        <Heading as="h3" variant="section-title">Bio</Heading>
-          
+        <Heading as="h3" variant="section-title">Experience</Heading>
+
         <BioSection>
-          <BioYear>2002</BioYear>
-          Born in WA, USA.
+          <BioHeader>
+            <Year>2025</Year>
+            <Company>Microsoft</Company>
+          </BioHeader>
+          Software engineer at Microsoft
         </BioSection>
 
         <BioSection>
-          <BioYear>2023</BioYear>
-          Data services internship at Costco
+          <BioHeader>
+            <Year>2025</Year>
+            <Company>Nelnet</Company>
+          </BioHeader>
+          Infrastructure engineer at Nelnet
         </BioSection>
 
         <BioSection>
-          <BioYear>2023</BioYear>
-          Software engineer internship at KBR
+          <BioHeader>
+            <Year>2024</Year>
+            <Company>Microsoft</Company>
+          </BioHeader>
+          SWE internship at Microsoft
         </BioSection>
 
         <BioSection>
-          <BioYear>2023</BioYear>
+          <BioHeader>
+            <Year>2023</Year>
+            <Company>Nelnet</Company>
+          </BioHeader>
           Infrastructure engineer internship at Nelnet
         </BioSection>
 
         <BioSection>
-          <BioYear>2024</BioYear>
-          Software engineer internship at Microsoft
+          <BioHeader>
+            <Year>2024</Year>
+            <Company>Bellevue College</Company>
+          </BioHeader>
+          Completed bachelors degree in Software Development at Bellevue College
         </BioSection>
 
         <BioSection>
-          <BioYear>2024</BioYear>
-          Completed bachelors degree in software development at Bellevue College
+          <BioHeader>
+            <Year>2023</Year>
+            <Company>KBR</Company>
+          </BioHeader>
+          SWE internship at KBR
         </BioSection>
 
         <BioSection>
-          <BioYear>2025 to present</BioYear>
-          Software engineer at Microsoft
+          <BioHeader>
+            <Year>2023</Year>
+            <Company>Costco</Company>
+          </BioHeader>
+          Data operations internship at Costco
         </BioSection>
 
         <Box align="center" my={4}>
           <a href="https://www.linkedin.com/in/dorothyhung1/" target="_blank">
           
-          <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+          <Button rightIcon={<ChevronRightIcon />} colorScheme="pink">
             My LinkedIn
           </Button>
           </a>
         </Box>
 
+      </Section>
+
+      <Section delay={0.1}>
+        <Heading as="h3" variant="section-title">Education</Heading>
+        
+        <BioSection>
+          <BioHeader>
+            <Year>2024</Year>
+            <Company>Bellevue College</Company>
+          </BioHeader>
+          Bachelors in Software Development
+        </BioSection>
       </Section>
     </Container>
   )
