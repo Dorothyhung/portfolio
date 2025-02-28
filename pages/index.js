@@ -53,7 +53,7 @@ const Page = () => {
       </Box>
 
       <Section delay={0.1 } bg={useColorModeValue('#f0f9f8', '#2020230')}>
-        <Heading as="h3" variant="section-title">Projects</Heading>
+        <Heading as="h3" variant="section-title">About Me</Heading>
         
         <Paragraph>Dorothy is a dedicated software engineer with a passion for building projects and making real world impact. 
         </Paragraph>
