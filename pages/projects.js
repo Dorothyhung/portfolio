@@ -1,8 +1,7 @@
-import { Container, Heading, SimpleGrid, Divider, Box, Button } from '@chakra-ui/react'
+import { Container, Heading, SimpleGrid, Box, Button } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
-
 import thumbSpotifyAnalysis from '../public/images/projects/spotify_thumbnail.png'
 import thumbImpervious from '../public/images/projects/impervious_thumbnail.png'
 import thumbSoundSafe from '../public/images/projects/soundsafe_thumbnail.png'
