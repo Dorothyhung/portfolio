@@ -1,4 +1,4 @@
-import { Container, Heading, SimpleGrid, Box, Button } from '@chakra-ui/react'
+import { Container, Heading, SimpleGrid, Box, Button, useColorModeValue } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
@@ -22,13 +22,13 @@ const Projects = () => {
             link="https://spotifyaudioanalysis.com/"
             newtab={true}
           >
-            A Spotify track analyzer for audio features
+            A Spotify track analyzer for audio features (for web only)
           </WorkGridItem>
 
           <Box align="center" my={4}>
             <a href="https://github.com/Dorothyhung/P320-Spotify-API-Project" target="_blank">
             
-            <Button rightIcon={<ChevronRightIcon />} colorScheme="pink">
+            <Button rightIcon={<ChevronRightIcon />} colorScheme='pink'>
                 Source
             </Button>
             </a>

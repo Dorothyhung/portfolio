@@ -18,15 +18,15 @@ import {
 import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button.js'
 
-const LinkItem = ({ href, path, children }) => {
+const LinkItem = ({ href, path, target, children, ...props }) => {
   const active = path === href
   const inactiveColor = useColorModeValue('rose.200', 'rose.800')
   return (
     <NextLink href={href} passHref legacyBehavior>
       <Link
         p={2}
-        bg={active ? 'glassTeal' : undefined}
-        color={active ? '#fbaebb' : inactiveColor}
+        bg={active ? '#d53f8c' : undefined}
+        color={active ? '#fed7e2' : inactiveColor}
       >
         {children}
       </Link>
@@ -35,13 +35,13 @@ const LinkItem = ({ href, path, children }) => {
 }
 
 const Navbar = props => {
-  const { path } = propNames
+  const { path } = props
   return (
     <Box
       // position="fixed"
       as="nav"
       v="100%"
-      bg={useColorModeValue('#ffffff40', '#2020230')}
+      bg={useColorModeValue('#f0f9f', '#2020230')}
       style={{ backdropFilter: 'blur(10px)' }}
       zIndex={1}
       {...props}

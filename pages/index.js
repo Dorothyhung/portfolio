@@ -4,6 +4,7 @@ import {
   Heading,
   Image,
   Button,
+  useColorModeValue
 } from '@chakra-ui/react'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
@@ -16,7 +17,6 @@ const Page = () => {
     <Container>
       <Box
         borderRadius="lg"
-        bg="{useColorModeValue('rose.800', 'rose.200')}"
         p={3}
         mb={5}
         align="center"
@@ -43,15 +43,16 @@ const Page = () => {
             borderWidth={2}
             borderStyle="solid"
             maxWidth="200px"
+            boxSize="200px"
             display="inline-block"
             borderRadius="full"
-            src="images/strawberry-logo.png"
+            src="images/profile-pic.JPEG"
             alt="profile image"
           />
         </Box>
       </Box>
 
-      <Section delay={0.1}>
+      <Section delay={0.1 } bg={useColorModeValue('#f0f9f8', '#2020230')}>
         <Heading as="h3" variant="section-title">Projects</Heading>
         
         <Paragraph>Dorothy is a dedicated software engineer with a passion for building projects and making real world impact. 
@@ -91,7 +92,7 @@ const Page = () => {
             <Year>2024</Year>
             <Company>Microsoft</Company>
           </BioHeader>
-          SWE internship at Microsoft
+          Software engineer intern at Microsoft
         </BioSection>
 
         <BioSection>
@@ -99,15 +100,7 @@ const Page = () => {
             <Year>2023</Year>
             <Company>Nelnet</Company>
           </BioHeader>
-          Infrastructure engineer internship at Nelnet
-        </BioSection>
-
-        <BioSection>
-          <BioHeader>
-            <Year>2024</Year>
-            <Company>Bellevue College</Company>
-          </BioHeader>
-          Completed bachelors degree in Software Development at Bellevue College
+          Infrastructure engineer intern at Nelnet
         </BioSection>
 
         <BioSection>
@@ -115,7 +108,7 @@ const Page = () => {
             <Year>2023</Year>
             <Company>KBR</Company>
           </BioHeader>
-          SWE internship at KBR
+          Software engineer intern at KBR
         </BioSection>
 
         <BioSection>
@@ -123,7 +116,7 @@ const Page = () => {
             <Year>2023</Year>
             <Company>Costco</Company>
           </BioHeader>
-          Data operations internship at Costco
+          Data operations intern at Costco
         </BioSection>
 
         <Box align="center" my={4}>
