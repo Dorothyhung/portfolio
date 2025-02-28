@@ -12,13 +12,12 @@ import {
   MenuList,
   MenuButton,
   IconButton,
-  useColorModeValue,
-  propNames
+  useColorModeValue
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button.js'
 
-const LinkItem = ({ href, path, target, children, ...props }) => {
+const LinkItem = ({ href, path, children }) => {
   const active = path === href
   const inactiveColor = useColorModeValue('rose.200', 'rose.800')
   return (

@@ -1,4 +1,4 @@
-import { Container, Heading, SimpleGrid, Box, Button, useColorModeValue } from '@chakra-ui/react'
+import { Container, Heading, SimpleGrid, Box, Button } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
