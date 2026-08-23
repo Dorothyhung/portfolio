@@ -76,7 +76,7 @@ const Page = () => {
             <Year>2025</Year>
             <Company>Microsoft</Company>
           </BioHeader>
-          Software engineer at Microsoft
+          Software engineer
         </BioSection>
 
         <BioSection>
@@ -84,7 +84,7 @@ const Page = () => {
             <Year>2025</Year>
             <Company>Nelnet</Company>
           </BioHeader>
-          Infrastructure engineer at Nelnet
+          Infrastructure engineer
         </BioSection>
 
         <BioSection>
@@ -92,7 +92,7 @@ const Page = () => {
             <Year>2024</Year>
             <Company>Microsoft</Company>
           </BioHeader>
-          Software engineer intern at Microsoft
+          Software engineer intern
         </BioSection>
 
         <BioSection>
@@ -100,7 +100,7 @@ const Page = () => {
             <Year>2023</Year>
             <Company>Nelnet</Company>
           </BioHeader>
-          Infrastructure engineer intern at Nelnet
+          Infrastructure engineer intern
         </BioSection>
 
         <BioSection>
@@ -108,7 +108,7 @@ const Page = () => {
             <Year>2023</Year>
             <Company>KBR</Company>
           </BioHeader>
-          Software engineer intern at KBR
+          Software engineer intern
         </BioSection>
 
         <BioSection>
@@ -116,7 +116,7 @@ const Page = () => {
             <Year>2023</Year>
             <Company>Costco</Company>
           </BioHeader>
-          Data operations intern at Costco
+          Data operations intern
         </BioSection>
 
         <Box align="center" my={4}>
@@ -135,7 +135,7 @@ const Page = () => {
         
         <BioSection>
           <BioHeader>
-            <Year>2024</Year>
+            <Year>Dec 2024</Year>
             <Company>Bellevue College</Company>
           </BioHeader>
           Bachelors in Software Development
